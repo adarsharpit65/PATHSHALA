@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeerLearn | Choose Role</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .logo {
+      width: 150px;
+      height: auto;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .title {
+      font-size: 2.5rem;
+      color: #333;
+      text-align: center;
+    }
+
+    .title span {
+      color: #2e7d32;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .blue { background-color: #2196f3; }
+    .green { background-color: #4caf50; }
+    .yellow { background-color: #ffb300; }
+  </style>
+</head>
+<body>
+  <img src="assets/img/Designer_1_-removebg-preview.png" alt="PeerLearn Logo" class="logo">
+
+  <div class="main">
+    <h1 class="title">Welcome to <span>PATHSHALA</span></h1>
+    <p class="subtitle">Connect • Learn • Grow Together</p>
+    <div class="buttons">
+      <button class="btn blue" onclick="goTo('learner/signup.html')">Learner</button>
+      <button class="btn green" onclick="goTo('tutor/signup.html')">Tutor</button>
+      <button class="btn yellow" onclick="goTo('both/signup.html')">Both</button>
+    </div>
+  </div>
+
+  <script>
+    function goTo(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>
+
+
